@@ -1,0 +1,60 @@
+{
+  "name": "Python Development Environment",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "args": {
+      "PYTHON_ENV": "my_python_dev"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/my_python_dev/bin/python3",
+        "python.testing.pytestArgs": [
+          "."
+        ],
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
+        
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter",
+          "editor.formatOnSave": true
+        },
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "always"
+        },
+        "black-formatter.args": [
+          "--line-length", "79"
+        ]
+      },
+      "extensions": [
+        // Common ext.
+        "alefragnani.bookmarks",
+        "christian-kohler.path-intellisense",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "eriklynd.json-tools",
+        "github.copilot",
+        "github.copilot-chat",
+        "hashicorp.terraform",
+        "leehome.auto-bookmark",
+        "ms-azuretools.vscode-docker",
+        "wayou.vscode-todo-highlight",
+        // language
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.debugpy",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow"
+      ]
+    }
+  }
+}
