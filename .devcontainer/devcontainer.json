@@ -10,6 +10,9 @@
   "customizations": {
     "vscode": {
       "settings": {
+        // Common ext.
+        "cSpell.diagnosticLevel": "Hint",
+        // language
         "python.defaultInterpreterPath": "/opt/my_python_dev/bin/python3",
         "python.testing.pytestArgs": [
           "."
@@ -42,6 +45,7 @@
         "leehome.auto-bookmark",
         "ms-azuretools.vscode-docker",
         "wayou.vscode-todo-highlight",
+        "streetsidesoftware.code-spell-checker",
         // language
         "ms-python.black-formatter",
         "ms-python.flake8",
