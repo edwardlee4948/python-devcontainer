@@ -8,4 +8,6 @@ python3 -m venv /opt/$PYTHON_ENV  \
 
 source /opt/$PYTHON_ENV/bin/activate
 
+pip3 install --upgrade pip
+
 pip3 install -r ./requirements/requirements.txt
